@@ -16,6 +16,7 @@
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
@@ -40,6 +41,65 @@
                             href="tel:+110001111111">+11(000)111-11-11</a></li>
                 </ul>
             </address>
+
+            <button class="menu-btn" type="button">
+                <svg width="32" height="22">
+                    <use href="./images/icons.svg#icon-hamburger"></use>
+                </svg>
+            </button>
+            <div class="modal-menu visually-hidden">
+                <button class="close-menu-btn" type="button"></button>
+                <ul class="mob-menu-list list">
+                    <li class="mob-menu-item"><a class="mob-menu-link menu link" href="./index.html">Studio</a>
+                    </li>
+                    <li class="mob-menu-item"><a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="mob-menu-item"><a class="mob-menu-link link" href="">Contacts</a></li>
+                </ul>
+                <address class="mob-menu-address">
+                    <ul class="mob-address-list list">
+                        <li class="mob-address-item"><a class="mob-address-link link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="mob-address-item"><a class="mob-address-link link"
+                                href="tel:+110001111111">+11(000)111-11-11</a>
+                        </li>
+                    </ul>
+                </address>
+                <ul class="mob-soc-list list">
+                    <li class="team-soc-items">
+                        <a class="team-soc-link" href="" aria-label="instagram" target="_blank"
+                            rel="noopener no-referrer">
+                            <svg class="tem-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-items">
+                        <a class="team-soc-link" href="" aria-label="twitter" target="_blank"
+                            rel="noopener no-referrer">
+                            <svg class="tem-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-items">
+                        <a class="team-soc-link" href="" aria-label="facebook" target="_blank"
+                            rel="noopener no-referrer">
+                            <svg class="tem-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="team-soc-items">
+                        <a class="team-soc-link" href="" aria-label="linkedin" target="_blank"
+                            rel="noopener no-referrer">
+                            <svg class="tem-soc-icon" width="16" height="16">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -57,7 +117,7 @@
                 <h2 class="visually-hidden">Benefits</h2>
                 <ul class="benefits-list list">
                     <li class="benefits-item">
-                        <div class="benefits-item-icon">
+                        <div class="benefits-item-icon ">
                             <svg class="benefits-item-image" width="64" height="64">
                                 <use href="./images/icons.svg#icon-antenna-1"></use>
                             </svg>
@@ -67,7 +127,7 @@
                             problem to walk away with the perfect and creative solution.</p>
                     </li>
                     <li class="benefits-item">
-                        <div class="benefits-item-icon">
+                        <div class="benefits-item-icon ">
                             <svg class="benefits-item-image" width="64" height="64">
                                 <use href="./images/icons.svg#icon-clock-1"></use>
                             </svg>
@@ -78,7 +138,7 @@
                             time.</p>
                     </li>
                     <li class="benefits-item">
-                        <div class="benefits-item-icon">
+                        <div class="benefits-item-icon ">
                             <svg class="benefits-item-image" width="64" height="64">
                                 <use href="./images/icons.svg#icon-diagram-1"></use>
                             </svg>
@@ -89,7 +149,7 @@
                             risk.</p>
                     </li>
                     <li class="benefits-item">
-                        <div class="benefits-item-icon">
+                        <div class="benefits-item-icon ">
                             <svg class="benefits-item-image" width="64" height="64">
                                 <use href="./images/icons.svg#icon-astronaut-1"></use>
                             </svg>
@@ -127,7 +187,7 @@
                     <li class="team-item">
                         <img src="./images/MarkGuerrero.jpg" alt="Mark Guerrero's face photo" width="264" height="260">
                         <div class="main-info">
-                            <h3 class="subtitle">Mark Guerrero</h3>
+                            <h3 class="subtitle-name">Mark Guerrero</h3>
                             <p class="text">Product Designer</p>
                             <ul class="team-soc-list list">
                                 <li class="team-soc-items">
@@ -169,7 +229,7 @@
                     <li class="team-item">
                         <img src="./images/TomFord.jpg" alt="Tom Ford's face photo" width="264" height="260">
                         <div class="main-info">
-                            <h3 class="subtitle">Tom Ford</h3>
+                            <h3 class="subtitle-name">Tom Ford</h3>
                             <p class="text">Frontend Developer</p>
                             <ul class="team-soc-list list">
                                 <li class="team-soc-items">
@@ -210,7 +270,7 @@
                     <li class="team-item">
                         <img src="./images/CamilaGarcia.jpg" alt="Camila Garcia's face photo" width="264" height="260">
                         <div class="main-info">
-                            <h3 class="subtitle">Camila Garcia</h3>
+                            <h3 class="subtitle-name">Camila Garcia</h3>
                             <p class="text">Marketing</p>
                             <ul class="team-soc-list list">
                                 <li class="team-soc-items">
@@ -251,7 +311,7 @@
                     <li class="team-item">
                         <img src="./images/DanielWilson.jpg" alt="Daniel Wilson's face photo" width="264" height="260">
                         <div class="main-info">
-                            <h3 class="subtitle">Daniel Wilson</h3>
+                            <h3 class="subtitle-name">Daniel Wilson</h3>
                             <p class="text">UI Designer</p>
                             <ul class="team-soc-list list">
                                 <li class="team-soc-items">
@@ -403,8 +463,8 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
 
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
                 <svg class="modal-icon" width="8" height="8">
@@ -461,7 +521,7 @@
             </form>
         </div>
 
-    </div>
+    </div> -->
 
     <script src="./js/modal.js"></script>
 </body>
