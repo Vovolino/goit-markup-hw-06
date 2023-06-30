@@ -1,5 +1,5 @@
 :root {
-    --title-color: ;
+    --main-color: #2E2F42;
     --main-text-color: #434455;
     --second-text-color: #FFFFFF;
     --logo-color: #4d5ae5;
@@ -61,7 +61,7 @@ input {
     font-size: 36px;
     line-height: 40px;
     letter-spacing: 0.72px;
-    color: var(--title-color);
+    color: var(--main-color);
     margin-bottom: 8px;
     text-align: center;
 }
@@ -76,6 +76,13 @@ input {
 
 /*-----header-----*/
 
+.header {
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
 .header-logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 800;
@@ -84,14 +91,25 @@ input {
     letter-spacing: 0.03em;
     color: var(--logo-color);
     text-transform: uppercase;
-    margin-right: 76px;
+}
 
-    margin-top: 24px;
-    margin-bottom: 22px;
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+.header-menu {
+    display: none;
 }
 
 .header-logo span {
-    color: var(--title-color)
+    color: var(--main-color);
+}
+
+.address {
+    display: none;
 }
 
 .menu-btn {
@@ -99,8 +117,6 @@ input {
     border: none;
     width: 32px;
     height: 22px;
-    margin-top: 24px;
-    margin-bottom: 22px;
     padding: 0;
 }
 
@@ -153,7 +169,7 @@ input {
 }
 
 .mob-menu-link {
-    color: var(--title-color);
+    color: var(--main-color);
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
@@ -296,7 +312,7 @@ input {
 /* hero */
 
 .hero {
-    background-color: var(--title-color);
+    background-color: var(--main-color);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -443,7 +459,7 @@ input {
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--title-color);
+    color: var(--main-color);
     text-transform: capitalize;
     margin: 0 auto;
     margin-bottom: 72px;
@@ -470,7 +486,7 @@ input {
 .cust-title {
     font-size: 36px;
     line-height: 1.11;
-    color: var(--title-color);
+    color: var(--main-color);
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -498,7 +514,7 @@ input {
 }
 
 .subtitle-name {
-    color: var(--title-color);
+    color: var(--main-color);
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -579,7 +595,7 @@ input {
 }
 
 .footer {
-    background-color: var(--title-color);
+    background-color: var(--main-color);
 
     padding-top: 97.5px;
     padding-left: 15px;
@@ -757,7 +773,7 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 408px;
+    width: 392px;
     min-height: 584px;
     background-color: var(--modal-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -807,7 +823,7 @@ input {
     line-height: 1.5;
     text-align: center;
     letter-spacing: 0.02em;
-    color: var(--title-color);
+    color: var(--main-color);
     margin-bottom: 16px;
 }
 
@@ -817,7 +833,7 @@ input {
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
     padding-left: 38px;
-    color: var(--title-color);
+    color: var(--main-color);
     outline: transparent;
     background-color: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -851,7 +867,7 @@ input {
     top: 50%;
     transform: translateY(-50%);
     height: 24px;
-    fill: var(--title-color);
+    fill: var(--main-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

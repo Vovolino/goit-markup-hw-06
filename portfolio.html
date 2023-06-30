@@ -16,30 +16,97 @@
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/media.css">
 </head>
 
 <body>
     <header class="header">
         <div class="container header-container">
             <nav class="header-navigation">
-                <a href="./index.html" class="header-logo link">WEB<span class="logo">Studio</span></a>
+                <a href="./index.html" class="header-logo link"> WEB<span>Studio</span> </a>
                 <ul class="header-menu list">
-                    <li class="header-menu-item"><a href="./index.html" class="header-menu-link link">Studio</a></li>
-                    <li class="header-menu-item"><a href="./portfolio.html"
-                            class="header-menu-link menu link">Portfolio</a>
+                    <li class="header-menu-item"><a class="header-menu-link link" href="./index.html">Studio</a>
                     </li>
-                    <li class="header-menu-item"><a href="" class="header-menu-link link">Contacts</a></li>
+                    <li class="header-menu-item"><a class="header-menu-link menu link"
+                            href="./portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="header-menu-item"><a class="header-menu-link link" href="">Contacts</a></li>
                 </ul>
             </nav>
-            <address class="address-list address">
+            <address class="address">
                 <ul class="address-list list">
-                    <li class="address-list-item"><a href="mailto:info@devstudio.com"
-                            class="address-list-link link">info@devstudio.com</a></li>
-                    <li class="address-list-item"><a href="tel:+110001111111" class="address-list-link link">+11 (000)
-                            111-11-11</a></li>
+                    <li class="address-list-item"><a class="address-list-link link"
+                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="address-list-item"><a class="address-list-link link"
+                            href="tel:+110001111111">+11(000)111-11-11</a></li>
                 </ul>
             </address>
+            <button class="menu-btn js-open-menu" type="button">
+                <svg width="32" height="22">
+                    <use href="./images/icons.svg#icon-hamburger"></use>
+                </svg>
+            </button>
         </div>
+        <div class="mob-menu js-menu-container">
+            <button type="button" class="close-menu-btn js-close-menu">
+                <svg class="modal-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+            <ul class="mob-menu-list list">
+                <li class="mob-menu-item"><a class="mob-menu-link link" href="./index.html">Studio</a>
+                </li>
+                <li class="mob-menu-item"><a class="mob-menu-link link" href="./portfolio.html">Portfolio</a>
+                </li>
+                <li class="mob-menu-item"><a class="mob-menu-link link" href="">Contacts</a></li>
+            </ul>
+            <div class="mob-address-container">
+                <address class="mob-menu-address">
+                    <ul class="mob-address-list list">
+                        <li class="mob-address-item"><a class="mob-address-link-tel link"
+                                href="tel:+110001111111">+11(000)111-11-11</a>
+                        </li>
+                        <li class="mob-address-item"><a class="mob-address-link-mail link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+
+                    </ul>
+                </address>
+                <ul class="mob-soc-list list">
+                    <li class="mob-soc-items">
+                        <a class="mob-soc-link" href="" aria-label="instagram" target="_blank"
+                            rel="noopener no-referrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-instagram-2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-items">
+                        <a class="mob-soc-link" href="" aria-label="twitter" target="_blank" rel="noopener no-referrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-twitter-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-items">
+                        <a class="mob-soc-link" href="" aria-label="facebook" target="_blank"
+                            rel="noopener no-referrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-facebook-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mob-soc-items">
+                        <a class="mob-soc-link" href="" aria-label="linkedin" target="_blank"
+                            rel="noopener no-referrer">
+                            <svg class="mob-soc-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-linkedin-1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
     </header>
 
     <main>
@@ -247,6 +314,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
