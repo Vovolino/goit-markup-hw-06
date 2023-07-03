@@ -121,6 +121,8 @@ input {
 }
 
 .mob-menu {
+    display: flex;
+    flex-direction: column;
     background-color: var(--second-text-color);
     position: fixed;
     top: 0;
@@ -182,11 +184,13 @@ input {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mob-address-container {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    bottom: 0;
+.menu {
+    color: var(--hover-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mob-menu-address {
+    margin-top: auto;
 }
 
 .mob-address-list {
@@ -199,7 +203,7 @@ input {
 .mob-address-link-tel {
     font-style: normal;
     color: var(--logo-color);
-    font-size: 36px;
+    font-size: 30px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -216,7 +220,7 @@ input {
 
 .mob-soc-list {
     display: flex;
-    gap: 56px;
+    gap: 40px;
 }
 
 .mob-soc-link {
@@ -319,9 +323,7 @@ input {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
             rgba(46, 47, 66, 0.7)),
         url(../images/hero-bg-mob.jpg);
-
-    /* padding: 188px 0; */
-    padding: 120px 0;
+    padding: 112px 0;
 }
 
 
@@ -634,18 +636,11 @@ input {
 .footer-container {
     display: flex;
     flex-wrap: wrap;
-
     justify-content: center;
+    gap: 72px;
 }
 
-.footer-text-column {
 
-    margin-bottom: 72px;
-}
-
-.footer-social {
-    margin-bottom: 72px;
-}
 
 .footer-soc-title {
     font-weight: 500;
@@ -697,13 +692,16 @@ input {
     justify-content: center;
     align-items: center;
     gap: 16px;
+    width: 100%;
 }
 
-.footer-label {}
+.footer-label {
+    width: 100%;
+}
 
 .footer-input {
-
-    width: 398px;
+    width: 100%;
+    width: 288px;
     height: 40px;
     border: 1px solid var(--second-text-color);
     border-radius: 4px;
@@ -753,11 +751,10 @@ input {
 }
 
 .footer-btn-icon {
-
-
     margin-left: 16px;
 }
 
+/* ------Modal-Form----- */
 .backdrop {
     position: fixed;
     top: 0;
@@ -773,7 +770,7 @@ input {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 392px;
+    width: 288px;
     min-height: 584px;
     background-color: var(--modal-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);

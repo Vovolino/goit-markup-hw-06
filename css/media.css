@@ -4,6 +4,22 @@
     .container {
         max-width: 428px;
     }
+
+    .mob-address-link-tel {
+        font-size: 36px;
+    }
+
+    .mob-soc-list {
+        gap: 56px;
+    }
+
+    .footer-input {
+        width: 398px;
+    }
+
+    .modal {
+        width: 392px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -52,10 +68,7 @@
         position: relative;
     }
 
-    .menu {
-        color: var(--hover-color);
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    }
+
 
     .menu::after {
         content: "";
@@ -156,7 +169,9 @@
     }
 
     .footer-container {
-        padding-left: 108px;
+        max-width: 584px;
+        column-gap: 24px;
+        row-gap: 72px;
     }
 
     .footer-container {
@@ -171,11 +186,10 @@
         justify-content: start;
     }
 
-    .footer-text-column {
-        margin-right: 24px;
-    }
+
 
     .footer-form {
+        flex-wrap: nowrap;
         gap: 24px;
     }
 
@@ -215,6 +229,7 @@
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
             url(../images/hero-bg.jpg);
+        padding: 188px 0;
     }
 
     .hero-title {
