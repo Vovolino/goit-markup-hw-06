@@ -71,7 +71,6 @@ input {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
-    margin-bottom: 8px;
 }
 
 /*-----header-----*/
@@ -203,7 +202,7 @@ input {
 .mob-address-link-tel {
     font-style: normal;
     color: var(--logo-color);
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
@@ -220,7 +219,7 @@ input {
 
 .mob-soc-list {
     display: flex;
-    gap: 40px;
+    gap: 25px;
 }
 
 .mob-soc-link {
@@ -326,6 +325,14 @@ input {
     padding: 112px 0;
 }
 
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/bg-mob2x.jpg);
+    }
+}
 
 
 .hero-title {
